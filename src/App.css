@@ -1,0 +1,41 @@
+.table-container {
+  position: relative;
+}
+
+.table-container table {
+  width: 100%;
+  overflow-y: auto;
+}
+
+.table-container thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.table-container tbody td {
+  position: relative;
+}
+
+.table-container tbody td:last-child {
+  position: sticky;
+  right: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.table-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
